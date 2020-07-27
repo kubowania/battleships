@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+}
+
+.grid-user {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  margin: 20px;
+}
+
+.grid div {
+  width: 40px;
+  height: 40px;
+}
+
+.grid-computer {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgreen;
+  margin: 20px;
+}
+
+.grid-display {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background-color: yellow;
+}
+
+.destroyer-container {
+  width: 80px;
+  height: 40px;
+  background-color: orange;
+  margin: 10px;
+  display: flex;
+}
+.destroyer-container-vertical {
+  width: 40px;
+  height: 80px;
+  background-color: orange;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.submarine-container {
+  width: 120px;
+  height: 40px;
+  background-color: pink;
+  margin: 10px;
+  display: flex;
+}
+
+.submarine-container-vertical {
+  width: 40px;
+  height: 120px;
+  background-color: pink;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cruiser-container {
+  width: 120px;
+  height: 40px;
+  background-color: purple;
+  margin: 10px;
+  display: flex;
+}
+
+.cruiser-container-vertical {
+  width: 40px;
+  height: 120px;
+  background-color: purple;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.battleship-container {
+  width: 160px;
+  height: 40px;
+  background-color: aqua;
+  margin: 10px;
+  display: flex;
+}
+
+.battleship-container-vertical {
+  width: 40px;
+  height: 160px;
+  background-color: aqua;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.carrier-container {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  margin: 10px;
+  display: flex;
+}
+
+.carrier-container-vertical {
+  width: 40px;
+  height: 200px;
+  background-color: green;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.ship div {
+  width: 40px;
+  height: 40px;
+}
+
+.destroyer {
+  background-color: orange;
+}
+
+.submarine {
+  background-color: pink;
+}
+
+.cruiser {
+  background-color: purple;
+}
+
+.battleship {
+  background-color: aqua;
+}
+
+.carrier {
+  background-color: green;
+}
+
+.boom {
+  background-color: red;
+}
+
+.miss {
+   background-color: black;
+}
