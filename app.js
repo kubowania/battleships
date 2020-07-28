@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (cpuDestroyerCount === 2) {
       infoDisplay.innerHTML = 'You sunk the computers Destroyer'
-      destroyerCount = 10
+      cpuDestroyerCount = 10
     }
     if (cpuSubmarineCount === 3) {
       infoDisplay.innerHTML = 'You sunk the computers Submarine'
