@@ -175,6 +175,8 @@ document.addEventListener('DOMContentLoaded', () => {
       for (let i=0; i < draggedShipLength; i++) {
         userSquares[parseInt(this.dataset.id) - selectedShipIndex + i].classList.add('taken', shipClass)
       }
+    //As long as the index of the ship you are dragging is not in the newNotAllowedVertical array! This means that sometimes if you drag the ship by its
+    //index-1 , index-2 and so on, the ship will rebound back to the displayGrid.
     } else if (!isHorizontal && !newNotAllowedVertical.includes(shipLastId)) {
       for (let i=0; i < draggedShipLength; i++) {
         userSquares[parseInt(this.dataset.id) - selectedShipIndex + width*i].classList.add('taken', shipClass)
