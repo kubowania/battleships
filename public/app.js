@@ -431,8 +431,6 @@ document.addEventListener('DOMContentLoaded', () => {
       cpuCarrierCount = 10
     }
 
-    console.log(destroyerCount,submarineCount,cruiserCount,battleshipCount,carrierCount)
-
     if ((destroyerCount + submarineCount + cruiserCount + battleshipCount + carrierCount) === 50) {
       infoDisplay.innerHTML = "YOU WIN"
       gameOver()
