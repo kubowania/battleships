@@ -5,6 +5,8 @@ Welcome to another JavaScript Game walkthrough! In this game, we learn not only 
 
 Watch the full video here: https://youtu.be/U64vIhh0TyM
 
+# [Live Demo](http://battleship.tech/)
+
 In this walkthrough we will:
 - make 5 draggable ships
 - rotate the ships prior to dragging
