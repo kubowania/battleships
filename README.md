@@ -22,7 +22,7 @@ After watching this video, please head over to:
 Codestackr to make it multiplayer: https://youtu.be/TpAwggQJPUQ
 Web Dev Simplified for the styling: https://youtu.be/G6JTM-zt-dQ
 
-### [Live Demo of the final game](http://battleship.tech/)
+### [Click here for a live Demo of the final game](http://battleship.tech/)
 
 Thanks for watching! If you liked watching this video, please do hit the  Subscribe or Like button so I know to make more!
 
