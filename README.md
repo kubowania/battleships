@@ -5,7 +5,7 @@ Welcome to another JavaScript Game walkthrough! In this game, we learn not only 
 
 Watch the full video here: https://youtu.be/U64vIhh0TyM
 
-# [Live Demo](http://battleship.tech/)
+
 
 In this walkthrough we will:
 - make 5 draggable ships
@@ -22,11 +22,13 @@ After watching this video, please head over to:
 Codestackr to make it multiplayer: https://youtu.be/TpAwggQJPUQ
 Web Dev Simplified for the styling: https://youtu.be/G6JTM-zt-dQ
 
+### [Live Demo of the final game](http://battleship.tech/)
+
 Thanks for watching! If you liked watching this video, please do hit the  Subscribe or Like button so I know to make more!
 
 ### MIT Licence
 
-Copyright (c) {{ 2020 }} {{ Ania Kubow }}
+Copyright (c) 2020 Ania Kubow
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +38,9 @@ copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software. And hey, please do reference me,
-so others can find this tutorial too!
+copies or substantial portions of the Software. 
+
+*Translation: Ofcourse you can use this for you project! Just make sure to say where you got this from :)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
