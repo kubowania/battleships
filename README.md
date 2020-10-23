@@ -22,10 +22,10 @@ After watching this video, please head over to:
 
 # Codestackr to make it multiplayer: https://youtu.be/TpAwggQJPUQ
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/TpAwggQJPUQ/0.jpg)](https://youtu.be/U64vIhh0TyM)
+[![Everything Is AWESOME](https://img.youtube.com/vi/TpAwggQJPUQ/0.jpg)](https://youtu.be/TpAwggQJPUQ)
 
 # Web Dev Simplified for the styling: https://youtu.be/G6JTM-zt-dQ
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/G6JTM-zt-dQ/0.jpg)](https://youtu.be/U64vIhh0TyM)
+[![Everything Is AWESOME](https://img.youtube.com/vi/G6JTM-zt-dQ/0.jpg)](https://youtu.be/G6JTM-zt-dQ)
 
 Thanks for watching! If you liked watching this video, please do hit the  Subscribe or Like button so I know to make more!
