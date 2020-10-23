@@ -3,7 +3,9 @@ javaScript HTML and CSS
 
 Welcome to another JavaScript Game walkthrough! In this game, we learn not only how to make the popular retro game battleships, but we team up with YouTubers codeSTACKr and Web Dev Simplified  in order to make it multiplayer and style it to the MAX!
 
-Watch the full video here: https://youtu.be/U64vIhh0TyM
+Watch the full video here: 
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/U64vIhh0TyM/0.jpg)](https://youtu.be/U64vIhh0TyM)
 
 In this walkthrough we will:
 - make 5 draggable ships
@@ -17,7 +19,13 @@ This tutorial will be in pure JavaScript, so no canvas will be used.
 We will not be focusing too much on the styling, this video will be all about the logic of the game. Please watch the next two videos in the series to have a completed multiplayer version that is styled.
 
 After watching this video, please head over to:
-Codestackr to make it multiplayer: https://youtu.be/TpAwggQJPUQ
-Web Dev Simplified for the styling: https://youtu.be/G6JTM-zt-dQ
+
+# Codestackr to make it multiplayer: https://youtu.be/TpAwggQJPUQ
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/TpAwggQJPUQ/0.jpg)](https://youtu.be/U64vIhh0TyM)
+
+# Web Dev Simplified for the styling: https://youtu.be/G6JTM-zt-dQ
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/G6JTM-zt-dQ/0.jpg)](https://youtu.be/U64vIhh0TyM)
 
 Thanks for watching! If you liked watching this video, please do hit the  Subscribe or Like button so I know to make more!
