@@ -196,9 +196,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const isTaken = current.some(index => computerSquares[randomStart + index].classList.contains('taken'))
     const isAtRightEdge = current.some(index => (randomStart + index) % width === width - 1)
     const isAtLeftEdge = current.some(index => (randomStart + index) % width === 0)
-
-    if (!isTaken && !isAtRightEdge && !isAtLeftEdge) current.forEach(index => computerSquares[randomStart + index].classList.add('taken', ship.name))
-
+    
+//     add isWrapped flag to let your ships exist on the edges of the board as long as they do not exist on both edges at once
+    const isWrapped = false;
+    if (isAtRightEdge && isAtLeftEdge){
+      isWrapped = true
+    } else {isWrapped = false}
+    
+//     now just check for !isWrapped instead of !isAtRightEdge && !isAtRightEdge
+    if (!isTaken && !isWrapped) current.forEach(index => computerSquares[randomStart + index].classList.add('taken', ship.name))
+// thats all of my proposed changes
     else generate(ship)
   }
   
