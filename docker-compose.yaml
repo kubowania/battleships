@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+    nodeserver:
+        build:
+            dockerfile: Dockerfile
+            context: ./
+        depends_on:
+            - nginx
+    nginx:
+        build:
+            dockerfile: Dockerfile
+            context: ./nginx
+        ports:
+            - "80:80"
+        volumes:
+            - logs:/var/log/nginx
+
+volumes:
+    logs:
