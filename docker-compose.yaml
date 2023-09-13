@@ -4,8 +4,7 @@ services:
         build:
             dockerfile: Dockerfile
             context: ./
-        depends_on:
-            - nginx
+
     nginx:
         build:
             dockerfile: Dockerfile
@@ -14,6 +13,8 @@ services:
             - "80:80"
         volumes:
             - logs:/var/log/nginx
+				depends_on:
+					- nodeserver
 
 volumes:
     logs:
