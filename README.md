@@ -1,4 +1,5 @@
 # Dockerized Battleships Game
+In this task, we should dockerize the game and create a container for an Nginx reverse proxy. We should then write a Docker compose file for this project.
 ## web application Dockerfile
 
 This Dockerfile will create a Docker image for the web application. It uses the official `Node.js` image as the base image, and then creates an `app` directory, copies the `package.json` and `package-lock.json` files into the app directory, installs the app dependencies, copies the app source code into the app directory, and defines the command to run the app.
