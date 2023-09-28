@@ -1,51 +1,40 @@
-# battleships-game
-javaScript HTML and CSS 
+# Dockerized Battleships Game
+In this task, we should dockerize the game and create a container for an Nginx reverse proxy. We should then write a Docker compose file for this project.
+## web application Dockerfile
 
-Welcome to another JavaScript Game walkthrough! In this game, we learn not only how to make the popular retro game battleships, but we team up with YouTubers codeSTACKr and Web Dev Simplified  in order to make it multiplayer and style it to the MAX!
+This Dockerfile will create a Docker image for the web application. It uses the official `Node.js` image as the base image, and then creates an `app` directory, copies the `package.json` and `package-lock.json` files into the app directory, installs the app dependencies, copies the app source code into the app directory, and defines the command to run the app.
 
-Watch the full video here: https://youtu.be/U64vIhh0TyM
+## reverse proxy Dockerfile
 
+This Dockerfile will create a Docker image for the reverse proxy. It uses the official `Nginx` image as the base image, and then copies the `default.conf` configuration file into the `/etc/nginx/conf.d` directory.
 
+> [!IMPORTANT]
+> If certain commands or instructions in your Dockerfile frequently change, it's best to position them near the end. This helps to avoid triggering unnecessary rebuilds of layers that haven't been affected by these changes.
 
-In this walkthrough we will:
-- make 5 draggable ships
-- rotate the ships prior to dragging
-- make the computer take random goes
-- display results based on who has sunk whos ship
-- display the winner
+## Docker Compose file
 
-This tutorial will be in pure JavaScript, so no canvas will be used.
+This Docker Compose file defines how to build and run the two Docker images that I created. It defines two services: `nodeserver` and `nginx`.
 
-We will not be focusing too much on the styling, this video will be all about the logic of the game. Please watch the next two videos in the series to have a completed multiplayer version that is styled.
+The nodeserver service builds the Docker image for the web application and then runs it. The nginx service builds the Docker image for the reverse proxy and then runs it.
 
-After watching this video, please head over to:
-Codestackr to make it multiplayer: https://youtu.be/TpAwggQJPUQ
-Web Dev Simplified for the styling: https://youtu.be/G6JTM-zt-dQ
+> [!NOTE]
+> The `depends_on` property for the nginx service tells Docker Compose that the nodeserver service must be running before the nginx service can start. This is because the nginx service needs the nodeserver service to be running.
 
-### [Click here for a live Demo of the final game](http://battleship.tech/)
+The ports property for the nginx service tells Docker Compose to expose port 80 on the host machine to port 80 on the container. This means that requests to port 80 on the host machine will be forwarded to port 80 on the container.
 
-Thanks for watching! If you liked watching this video, please do hit the  Subscribe or Like button so I know to make more!
+The volumes property for the nginx service tells Docker Compose to mount the logs volume to the `/var/log/nginx` directory in the container. This means that the logs for the Nginx server will be stored in the logs volume.
 
-### MIT Licence
+## .dockerignore file
 
-Copyright (c) 2020 Ania Kubow
+This file tells Docker which files and directories to ignore when building or running the Docker images. 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+> [!NOTE]
+> For security, cache invalidation, faster build process, and reduced image size, it is better to create this file and exclude unnecessary files.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software. 
+## nginx config file
 
-*Translation: Ofcourse you can use this for you project! Just make sure to say where you got this from :)
+The Nginx config file tells Nginx how to proxy requests to the web application. It does this by defining a server block with a listen port of 80 and a server name of bootcamp.neshan.org. The server block also defines a location block that handles all requests. The location block proxies requests to the nodeserver service on port 3000.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
-OR OTHER DEALINGS IN THE SOFTWARE.
+you can run these containers with 
+
+    docker-compose up --build -d

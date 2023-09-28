@@ -1,0 +1,7 @@
+node_modules
+nginx
+README.md
+Dockerfile
+docker-compose.yaml
+contaienrDoc.md
+.git
